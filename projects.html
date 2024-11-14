@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 1. -->
+    <title>Amna's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Amna Gul</a></div>
+      <div>
+        <ul class="nav-links">
+          <li class="dropdown">
+            <a href="#projects" class="dropbtn">Portfolio</a>
+            <div class="dropdown-content">
+              <a href="projects.html">Projects</a>
+              <a href="https://public.tableau.com/app/profile/amna1236/vizzes" target="_blank">Tableau</a>
+              <a href="https://www.adb.org/sites/default/files/publication/919676/unlocking-maritime-insights-ais-data.pdf" target="_blank">Research Publication</a>
+              <a href="https://github.com/Guluna/" target="_blank">Github</a>
+            </div>
+          </li>
+          <li><a href="#blogs">Blogs</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+    <!-- 3. -->
+      <div class="logo">Amna Gul</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <!-- <li><a href="#about" onclick="toggleMenu()">About</a></li> -->
+          
+          <li><a href="#projects" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+   
+
+
+    <section id="projects">
+      <!-- <p class="section__text__p1">Browse My Recent</p> -->
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/CXR_abnormality_detection.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Using Deep Learning for Abnormality Detection in Chest X-Rays</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/Abnormality-Detection-in-Chest-X-rays/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://sheldonsebastian.github.io/vbd_cxr/'"
+              >
+                Project Report
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/nyc_yellow_taxi.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Predicting Tip-Fare ratio for NYC Yellow Cabs Using Traditional ML Models</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Tann10/Taxi-Analysis/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://rpubs.com/Guluna/Taxi_analysis_Models/'"
+              >
+               Project Report
+              </button>
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div> -->
+            <!-- <h2 class="experience-sub-title project-title">Project Three</h2> -->
+            <!-- <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+   
+    <footer>
+
+      <p>Copyright &#169; 2024 Amna Gul. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
