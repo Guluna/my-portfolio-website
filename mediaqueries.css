@@ -101,3 +101,99 @@
     text-align: justify;
   }
 }
+
+
+/* Add this new rule or update existing */
+.hamburger-menu {
+  position: static; /* This releases the "trap" */
+}
+
+/* 1. Position the Hamburger Nav container */
+#hamburger-nav {
+  display: flex; /* Makes the logo and burger icon sit side-by-side */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white; /* Ensures the top bar is solid */
+  position: relative; /* Essential for the absolute menu to work */
+  z-index: 1000; /* Keeps it on top of everything */
+}
+
+/* 2. The Menu List (The part that drops down) */
+.menu-links {
+  position: absolute;
+  top: 100%; /* Position it right below the nav bar */
+  left: 0;   /* CRITICAL: Forces it to start at the left edge of the screen */
+  width: 100%; /* Now it will span the full screen */
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  
+  /* Styling content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+/* 3. The "Open" State (Triggered by JS) */
+.menu-links.open {
+  max-height: 600px; /* Large enough to fit all links when open */
+}
+
+/* 4. Link Styling */
+.menu-links li {
+  list-style: none;
+  width: 100%;
+}
+
+.menu-links a, .dropdown-btn {
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem; /* Make text readable */
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* 1. Ensure the main menu can grow tall enough when a dropdown opens */
+.menu-links.open {
+  max-height: 100vh; /* Changed from 600px to full screen height (viewport height) */
+  overflow-y: auto;  /* Allows scrolling if the menu gets too long */
+}
+
+/* 2. Style the Sub-menu to be strictly hidden by default */
+.sub-menu {
+  display: none; /* Crucial: It must be gone completely when closed */
+  background-color: #f9f9f9;
+  width: 100%;
+  border-left: 4px solid #333; /* Adds a visual indicator on the left */
+}
+
+/* 3. The class that JS adds to show it */
+.sub-menu.open-submenu {
+  display: block !important; /* Forces it to show */
+  animation: fadeIn 0.3s ease; /* Makes it appear smoothly */
+}
+
+.sub-menu li a {
+  font-size: 1rem; /* Smaller font for sub-items */
+  padding: 0.8rem;
+  color: #555;
+}
+
+/* Optional: A simple fade in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

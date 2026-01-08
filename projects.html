@@ -24,30 +24,65 @@
               <a href="https://github.com/Guluna/" target="_blank">Github</a>
             </div>
           </li>
-          <li><a href="#writings">Writings</a></li>
+          
+          <li class="dropdown">
+            <a href="#writings" class="dropbtn">Writings</a>
+            <div class="dropdown-content">
+              <a href="https://guluna.github.io/TechInterviewPrep/" target="_blank">Technical Interview Prep</a>
+              <a href="https://guluna.github.io/data-science-jupyterbook/" target="_blank">Core Data Science Topics</a>
+              <a href="https://medium.com/@gul357/geocoding-for-beginners-from-googles-wallet-burner-to-openstreetmap-s-free-spirit-9bb97a81911b" target="_blank">Geocoding Article</a>
+              
+            </div>
+          </li>
+
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
+
+    
+<!-- hamburger-nav is for view on mobile devices -->
     <nav id="hamburger-nav">
-    <!-- 3. -->
-      <div class="logo">Amna Gul</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <!-- <li><a href="#about" onclick="toggleMenu()">About</a></li> -->
-          
-          <li><a href="#projects" onclick="toggleMenu()">Portfolio</a></li>
-          <li><a href="#writings" onclick="toggleMenu()">Writings</a></li>
-          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
+  <div class="logo">Amna Gul</div>
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="menu-links">
+      
+      <li class="mobile-dropdown">
+        <span class="dropdown-btn" onclick="toggleSubMenu('portfolio-submenu')">
+            Portfolio <i class="arrow down">▼</i>
+        </span>
+        <ul id="portfolio-submenu" class="sub-menu">
+          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="https://public.tableau.com/app/profile/amna1236/vizzes" target="_blank" onclick="toggleMenu()">Tableau</a></li>
+          <li><a href="https://www.adb.org/sites/default/files/publication/919676/unlocking-maritime-insights-ais-data.pdf" target="_blank" onclick="toggleMenu()">Research Pub</a></li>
+          <li><a href="https://github.com/Guluna/" target="_blank" onclick="toggleMenu()">Github</a></li>
+        </ul>
+      </li>
+
+      <li class="mobile-dropdown">
+        <span class="dropdown-btn" onclick="toggleSubMenu('writings-submenu')">
+            Writings <i class="arrow down">▼</i>
+        </span>
+        <ul id="writings-submenu" class="sub-menu">
+          <li><a href="https://guluna.github.io/TechInterviewPrep/" target="_blank" onclick="toggleMenu()">Interview Prep</a></li>
+          <li><a href="https://guluna.github.io/data-science-jupyterbook/" target="_blank" onclick="toggleMenu()">Data Science</a></li>
+          <li><a href="https://medium.com/@gul357/geocoding-for-beginners-from-googles-wallet-burner-to-openstreetmap-s-free-spirit-9bb97a81911b" target="_blank" onclick="toggleMenu()">Geocoding</a></li>
+        </ul>
+      </li>
+
+      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+      
+    </div>
+  </div>
+</nav>
+
 
    
 
