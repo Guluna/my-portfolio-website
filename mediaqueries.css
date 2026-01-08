@@ -197,3 +197,37 @@
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* ---------------------------------------------------- */
+/* 1. DEFAULT STATE (Desktop / Large Screens)           */
+/* ---------------------------------------------------- */
+
+/* Show the Desktop Nav */
+#desktop-nav {
+  display: flex; 
+  /* ... your existing flex properties ... */
+}
+
+/* HIDE the Hamburger Nav on big screens */
+#hamburger-nav {
+  display: none; 
+}
+
+
+/* ---------------------------------------------------- */
+/* 2. MOBILE STATE (Screens smaller than 1200px)        */
+/* ---------------------------------------------------- */
+/* You can change 1200px to 1024px or 768px depending on when you want it to switch */
+
+@media screen and (max-width: 1200px) {
+
+  /* HIDE the Desktop Nav */
+  #desktop-nav {
+    display: none;
+  }
+
+  /* SHOW the Hamburger Nav */
+  #hamburger-nav {
+    display: flex; /* Use flex to align logo and icon properly */
+  }
+}
