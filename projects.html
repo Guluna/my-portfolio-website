@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 1. -->
     <title>Amna's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    
+   
   </head>
   <body>
 
@@ -31,7 +32,6 @@
               <a href="https://guluna.github.io/TechInterviewPrep/" target="_blank">Technical Interview Prep</a>
               <a href="https://guluna.github.io/data-science-jupyterbook/" target="_blank">Core Data Science Topics</a>
               <a href="https://medium.com/@gul357/geocoding-for-beginners-from-googles-wallet-burner-to-openstreetmap-s-free-spirit-9bb97a81911b" target="_blank">Geocoding Article</a>
-              
             </div>
           </li>
 
@@ -40,64 +40,368 @@
       </div>
     </nav>
 
-
-    
-<!-- hamburger-nav is for view on mobile devices -->
     <nav id="hamburger-nav">
-  <div class="logo">Amna Gul</div>
-  <div class="hamburger-menu">
-    <div class="hamburger-icon" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+      <div class="logo">Amna Gul</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-    <div class="menu-links">
-      
-      <li class="mobile-dropdown">
-        <span class="dropdown-btn" onclick="toggleSubMenu('portfolio-submenu')">
-            Portfolio <i class="arrow down">▼</i>
-        </span>
-        <ul id="portfolio-submenu" class="sub-menu">
-          <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="https://public.tableau.com/app/profile/amna1236/vizzes" target="_blank" onclick="toggleMenu()">Tableau</a></li>
-          <li><a href="https://www.adb.org/sites/default/files/publication/919676/unlocking-maritime-insights-ais-data.pdf" target="_blank" onclick="toggleMenu()">Research Pub</a></li>
-          <li><a href="https://github.com/Guluna/" target="_blank" onclick="toggleMenu()">Github</a></li>
-        </ul>
-      </li>
+        <div class="menu-links">
+          <li class="mobile-dropdown">
+            <span class="dropdown-btn" onclick="toggleSubMenu('portfolio-submenu')">
+                Portfolio <i class="arrow down">▼</i>
+            </span>
+            <ul id="portfolio-submenu" class="sub-menu">
+              <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="https://public.tableau.com/app/profile/amna1236/vizzes" target="_blank" onclick="toggleMenu()">Tableau</a></li>
+              <li><a href="https://www.adb.org/sites/default/files/publication/919676/unlocking-maritime-insights-ais-data.pdf" target="_blank" onclick="toggleMenu()">Research Pub</a></li>
+              <li><a href="https://github.com/Guluna/" target="_blank" onclick="toggleMenu()">Github</a></li>
+            </ul>
+          </li>
 
-      <li class="mobile-dropdown">
-        <span class="dropdown-btn" onclick="toggleSubMenu('writings-submenu')">
-            Writings <i class="arrow down">▼</i>
-        </span>
-        <ul id="writings-submenu" class="sub-menu">
-          <li><a href="https://guluna.github.io/TechInterviewPrep/" target="_blank" onclick="toggleMenu()">Interview Prep</a></li>
-          <li><a href="https://guluna.github.io/data-science-jupyterbook/" target="_blank" onclick="toggleMenu()">Data Science</a></li>
-          <li><a href="https://medium.com/@gul357/geocoding-for-beginners-from-googles-wallet-burner-to-openstreetmap-s-free-spirit-9bb97a81911b" target="_blank" onclick="toggleMenu()">Geocoding</a></li>
-        </ul>
-      </li>
+          <li class="mobile-dropdown">
+            <span class="dropdown-btn" onclick="toggleSubMenu('writings-submenu')">
+                Writings <i class="arrow down">▼</i>
+            </span>
+            <ul id="writings-submenu" class="sub-menu">
+              <li><a href="https://guluna.github.io/TechInterviewPrep/" target="_blank" onclick="toggleMenu()">Interview Prep</a></li>
+              <li><a href="https://guluna.github.io/data-science-jupyterbook/" target="_blank" onclick="toggleMenu()">Data Science</a></li>
+              <li><a href="https://medium.com/@gul357/geocoding-for-beginners-from-googles-wallet-burner-to-openstreetmap-s-free-spirit-9bb97a81911b" target="_blank" onclick="toggleMenu()">Geocoding</a></li>
+            </ul>
+          </li>
 
-      <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
-      
-    </div>
-  </div>
-</nav>
-
-
-   
-
+          <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
 
     <section id="projects">
-      <!-- <p class="section__text__p1">Browse My Recent</p> -->
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+
+<!-- start here ***************************  -->  
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/paul_graham.png"
+                alt="airbnb"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Building a Paul Graham Digital Twin Startup Mentor with RAG</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/Using-LLM-For-Business/tree/main/Paul%20Graham%20Mentor%20RAG'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQAeaay36QP-QpiUC1D-6jZzAVw4cIy1mIgxq508yPfdGHc?e=3QDkoa'"
+              >
+                Slides
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/v/c/65f2eb2d280c3713/IQBcRTqb3o5uQ4_EGcFdQp0_Aa1pYGHjUOaUevPxNOUWjts?e=V8WABl'"
+              >
+                Demo Video
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ArcGIS.png"
+                alt="airbnb"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Using ArcGIS and GeoSpatial Analysis for Strategic Bank Branch Site Selection</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/ArcGIS-for-Geospatial-Analysis/blob/main/Strategic%20Bank%20Branch%20Site%20Selection%20Report_%20Bank%20of%20America%2C%20Unbanked%20LA%20Zone%20Report.pdf'"
+              >
+                Report
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/ArcGIS-for-Geospatial-Analysis/blob/main/Strategic%20Site%20Selection.pdf'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+          
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/IBM_telco.png"
+                alt="airbnb"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Decoding Sales Drivers In E-Commerce (Causal Analysis)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/Causal-Inference-Customer-Churn'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQBfqg-1iJKOSI1-6AgmEYPJAaPmkzzCC15hauL0fiLOHl0?e=eHbIeq'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ecommerce.png"
+                alt="airbnb"
+                class="project-img large-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Decoding Sales Drivers In E-Commerce (Causal Analysis)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/Causal-Inference-E-Commerce-Data/blob/main/Final%20Report.pdf'"
+              >
+                Report
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQCoi_2M2TgcRrSU1iP_03EwATvmpi8KEBhmT2BIWuUofTY?e=BfiVA3'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/reelgood.png"
+                alt="airbnb"
+                class="project-img large-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Understanding the Streaming Ecosystems via ReelGood Data Insights</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/DSO-574/blob/main/ReelGood/ReelGood_EDA.ipynb'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQBWrd-sGeELQ5GTbf4jKlkNAY2_htyuR4YXMVyZelvT6vE?e=pDkq7B'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/NBA.png"
+                alt="airbnb"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">How does the play of a star basketball player change depending on the teammates they are playing with?</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQDwNE1SQSt-S41GmSWg5k2zAafD1D7nYy4iBKsx5DFXHak?e=6yWuS3'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+          
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/airbnb.png"
+                alt="airbnb"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pre And Post Covid AirBnB Trends in the LA Market</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/DSO-574/blob/main/AirBnB/What%20is%20important%20for%20a%20successful%20listing%20Post%20COVID%3F.ipynb'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQAr2VTUE-pFQY-t3v0acvMvAciwuUcCGAMeMhSZfep5z6I?e=WCBOg5'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/NoSQL_Indexing.png"
+                alt="NoSQL Indexing"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Accelerating Content Discovery Using Advanced NoSQL Indexing Techniques in MongoDB</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQBfqBWG5FwwTpke2OwfAE0pAYvGLiwGTYx2IAfNyvx1jfU?e=gqLcEI'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Insurance_Loss_Analytics.png"
+                alt="Insurance_Loss_Analytics"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Insurance Risk Modeling Using Regression and Classification Techniques</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/Insurance-Risk-Modeling-Using-Regression-and-Classification-Techniques'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQCzCUm8PEInQqTF1BjAoqhqAQ-DNPb2a36wkCrd0ftDvVY?e=0naagg'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/PGA_Tour.png"
+                alt="PGA_Tour"
+                class="project-img large-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Driving Distance vs. Golf Performance Regression Analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Guluna/PGA-Tour-Stats-Regression-Analysis'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQAO0WBYwsniRZ5LVhdiTWqgAabz_q7SPg6X9ujsWnFG-Q0?e=LOU4qI'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Deepseek.png"
+                alt="Deepseek AI"
+                class="project-img large-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Understanding the Rapid Rise of DeepSeek AI and Its Implications</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQBWH0rocAr0T5dNsRBq8qIZAQYZf-qrxntL-50zvcQ2aLk?e=yIpNUq'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/success_during_internship.png"
+                alt="Success Strategies"
+                class="project-img large-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Key Strategies for Maximizing Growth and Success During an Internship</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://1drv.ms/b/c/65f2eb2d280c3713/IQABw6c7yKBWRZ_vDJWaxhP-AUdpN3sjAJ_p9c2tpvVvHg0?e=x8Uqha'"
+              >
+                Slides
+              </button>
+              
+            </div>
+          </div>
+
+
+
+
 
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/CXR_abnormality_detection.png"
-                alt="Project 1"
+                alt="CXR_abnormality_detection"
                 class="project-img"
               />
             </div>
@@ -193,35 +497,13 @@
             </div>
           </div>
 
-
         </div>
       </div>
-
-      
-
-
-
-
-
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-
-
-
 
 
     </section>
 
-
-
-   
     <footer>
-
       <p>Copyright &#169; 2024 Amna Gul. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
